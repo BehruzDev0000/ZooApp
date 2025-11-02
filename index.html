@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" href="./images/icons/site-logo.svg">
     <title>Zoo Project</title>
 </head>
 <body>
@@ -266,37 +267,41 @@
                         <img src="./images/icons/site-logo.svg" alt="site logo">
                     </a>
                     <h3 class="footer__left-title">Contact Us</h3>
-                    <form action="post" class="footer__form">
+                    <form action="https://echo.htmlacademy.ru" method="post" class="footer__form">
                         <div class="footer__input">
-                            <input type="text" class="footer__unput-text" placeholder="Name">
+                            <input type="text" name="name" class="footer__unput-text" placeholder="Name">
                         </div>
                         <div class="footer__input">
-                            <input type="email" class="footer__unput-email" placeholder="Email">
+                            <input type="email" name="email" class="footer__unput-email" placeholder="Email">
                         </div>
                         <fieldset>
                             <legend class="footer__legend">Please enter your message</legend>
-                            <textarea name="text" class="fieldset-text"></textarea>
+                            <textarea name="textarea" class="fieldset-text"></textarea>
                         </fieldset>
                         <label class="footer__checkbox-label">
                             <input type="checkbox" name="checkbox" class="footer__checkbox">
                             I agree to the processing of Personal Data
                         </label>
-                        <button></button>
+                       <button type="submit" class="footer__left-btn">
+                         <span class="footer__left-span">SEND
+                            <img src="./images/icons/right-arrow.svg" alt="Right arrow icon">
+                        </span>
+                       </button>
                     </form>
                 </div>
                 <div class="footer__right-part">
                     <ul class="footer__list">
                         <li class="footer__item">
-                            <a class="footer__link" href="#"></a>
+                            <a class="footer__link" href="#">About</a>
                         </li>
                         <li class="footer__item">
-                            <a class="footer__link" href="#"></a>
+                            <a class="footer__link" href="#">Zoos</a>
                         </li>
                         <li class="footer__item">
-                            <a class="footer__link" href="#"></a>
+                            <a class="footer__link" href="#">Map</a>
                         </li>
                         <li class="footer__item">
-                            <a class="footer__link" href="#"></a>
+                            <a class="footer__link" href="#">Design</a>
                         </li>
                     </ul>
                     <div class="footer__right-content">

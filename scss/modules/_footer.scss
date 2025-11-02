@@ -4,6 +4,8 @@
 
 .footer__wrapper {
     @include Display($items:start,$justify:space-between,$gap:0px);
+    flex-wrap: wrap;
+    padding-bottom: 65px;
 }
 .footer__left-part {
     max-width: 383px;
@@ -15,6 +17,7 @@
     @include  TextStyle($size:20px,$weight:900,$height:100%,$letter:0,$color:$clr-white,$bottom:33px);
 }
 .footer__form {
+    width: 383px;
     @include Display($items:start,$justify:start,$gap:0);
     flex-direction: column;
 }
@@ -49,6 +52,7 @@ fieldset{
     width: 100%;
     padding: 12px;
     border: 1px solid $clr-medium-gray;
+    margin-bottom: 25px;
 }
 
 .footer__legend {
@@ -68,6 +72,7 @@ fieldset{
 }
 .footer__checkbox-label{
     @include TextStyle($size:12px,$weight:400,$height:100%,$letter:0,$color:$clr-medium-gray,$bottom:0);
+    @include Display($items:center,$justify:start,$gap:5px);
 }
 .footer__checkbox {
     width: 13px;
@@ -75,34 +80,65 @@ fieldset{
     border: 1px solid $clr-medium-gray;
     color: transparent;
 }
+.footer__left-btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: none;
+}
+.footer__left-span{
+    padding-left: 259px;
+    @include Display($items:center,$justify:start,$gap:24px);
+    @include TextStyle($size:14px,$weight:500,$height:100%,$letter:0,$color:$clr-text,$bottom:0);
+}
 .footer__right-part {
+    width: 404px;
 }
 .footer__list {
+    @include Display($items:start,$justify:start,$gap:73px);
+    margin-bottom: 74px;
 }
-.footer__item {
-}
+
 .footer__link {
+    @include TextStyle($size:16px,$weight:500,$height:100%,$letter:0,$color:$clr-text,$bottom:0);
 }
 .footer__right-content {
+    width: 190px;
 }
 .footer__right-title {
+    @include TextStyle($size:14px,$weight:700,$height:100%,$letter:0,$color:$clr-text,$bottom:0);
 }
 .footer__right-text-wrapper {
+    margin-top: 35px;
+}
+.footer__right-bottom-text{
+    margin-top: 20px;
 }
 .footer__right-text {
-}
-.footer__right-bottom-text {
+    @include TextStyle($size:14px,$weight:400,$height:100%,$letter:0,$color:$clr-text,$bottom:5px);
 }
 .footer__social {
+    margin-top: 20px;
+    @include Display($items:center,$justify:start,$gap:15px)
 }
-.footer__social-item {
-}
+
 .footer__btn {
+      width:245px;
+    justify-content: center;
+    @include BtnStyle($padding:12px 0,$bg-color:$clr-btn,$clr:$clr-white,$border:2px solid transparent,$radius:3px);
 }
 
 .footer__line {
+    width: 100%;
+    display: block;
+    height: 1px;
+    background-color: $clr-medium-gray;
 }
 .footer__bottom-wrapper {
+    margin-top: 28px;
+    @include Display($items:start,$justify:start,$gap:5px);
+    flex-direction: column;
 }
 .footer__bottom-text {
+    @include TextStyle($size:12px,$weight:400,$height:100%,$letter:0,$color:$clr-medium-gray,$bottom:0);
 }
