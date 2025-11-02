@@ -1,0 +1,55 @@
+.banner-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #4F4F4F;
+}
+
+.banner_list {
+    @include Display($items:start,$justify:space-between,$gap:0)
+}
+.banner__item { 
+    text-align: center;
+    width: 380px;
+}
+.banner__img {
+    margin-bottom: 15px;
+}
+.banner__title {
+    @include TextStyle($size:20px,$weight:900,$height:100%,$letter:0,$color:$clr-text,$bottom:15px)
+}
+.banner__text {
+    text-align: start;
+    @include TextStyle($size:14px,$weight:400,$height:100%,$letter:0,$color:$clr-gray,$bottom:0)
+}
+.text-hidden{
+    display: none;
+}
+
+@media (max-width:960px){
+.banner_list {
+    @include Display($items:center,$justify:center,$gap:50px);
+    flex-direction: column;
+}
+.banner__item { 
+    text-align: center;
+    max-width: 287px;
+}
+.banner__img {
+    margin-bottom: 15px;
+}
+.text-block{
+    display: none;
+}
+.text-hidden{
+    display: block;
+}
+}
+@media (max-width:650px){
+    .banner-section{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .banner__item{
+        max-width: 100%;
+    }
+}

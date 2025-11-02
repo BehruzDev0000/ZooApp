@@ -1,0 +1,124 @@
+.map-section {
+    background-color: #4F4F4F;
+    padding: 100px 0;
+}
+.map {
+    position: relative;
+}
+.map__title-wrapper {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.map__title {
+    @include  TextStyle($size:48px,$weight:900,$height:100%,$letter:0,$color:$clr-white,$bottom:0);
+}
+.map__content-wrapper {
+    margin-bottom: 35px;
+}
+.map__content-img{
+width: 100%;
+object-fit: cover;
+
+}
+.map-card-wrapper {
+    top: 238px;
+    left: 101px;
+    position: absolute;
+    border-radius: 8px;
+    width: 438px;
+    padding: 40px 55px 44px 44px;
+    @include Display($items:center,$justify:start,$gap:20px);
+    background-color:#333333;
+    box-shadow: 2px 4px 15px 0px #060C4626;
+}
+.map__card-content {
+    @include Display($items:start,$justify:start,$gap:0);
+    flex-direction: column;
+}
+.map__card-img{
+    width: 65px;
+    height: 65px;
+}
+.map__card-title {
+      @include  TextStyle($size:18px,$weight:900,$height:100%,$letter:0,$color:$clr-text,$bottom:7px);
+}
+.map__card-text {
+      @include  TextStyle($size:14px,$weight:400,$height:100%,$letter:0,$color:$clr-gray,$bottom:5px);
+}
+.map__card-changed {
+        @include  TextStyle($size:14px,$weight:500,$height:100%,$letter:0,$color:$clr-text,$bottom:0);
+}
+
+
+.map__btn-wrapper {
+    width: 100%;
+    @include Display($items:center,$justify:center,$gap:0px)
+}
+.map__btn {
+    @include Display($items:center,$justify:start,$gap:5px);
+    width:245px;
+    justify-content: center;
+    @include BtnStyle($padding:12px 0,$bg-color:$clr-btn,$clr:$clr-white,$border:2px solid transparent,$radius:3px);
+}
+@media (max-width:970px){
+    .map-section{
+        padding-bottom: 80px;
+    }
+    .map__title-wrapper{
+        margin-bottom: 50px;
+    }
+    .map__content-wrapper{
+        margin-bottom: 35px;
+    }
+    .map-card-wrapper{
+        top: 186px;
+        left: 72px;
+        right: 92px;
+    }
+}
+@media (max-width:620px){
+    .map-section{
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+    .map__title-wrapper{
+        margin-bottom: 30px;
+    }
+    .map__title{
+        font-size: 36px;
+    }
+    .map__content-wrapper{
+        margin-bottom: 30px;
+    }
+    .map-card-wrapper{
+        top: 106px;
+        left: 35px;
+        right: 27px;
+    }
+    .map-card-wrapper {
+    width: 238px;
+    padding: 16px 24px 19px 15px;
+    @include Display($items:start,$justify:start,$gap:8px);
+    background-color:#333333;
+    box-shadow: 2px 4px 15px 0px #060C4626;
+}
+.map__card-content {
+    @include Display($items:start,$justify:start,$gap:0);
+    flex-direction: column;
+}
+.map__card-img{
+    width: 40px;
+    height: 40px;
+}
+.map__card-title {
+      @include  TextStyle($size:14px,$weight:900,$height:100%,$letter:0,$color:$clr-text,$bottom:5px);
+}
+.map__card-text {
+      @include  TextStyle($size:11px,$weight:400,$height:100%,$letter:0,$color:$clr-gray,$bottom:5px);
+}
+.map__card-changed {
+        @include  TextStyle($size:11px,$weight:500,$height:100%,$letter:0,$color:$clr-text,$bottom:0);
+}
+}

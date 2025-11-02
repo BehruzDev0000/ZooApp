@@ -1,0 +1,108 @@
+.site-footer {
+    padding: 100px 0 72px 0;
+}
+
+.footer__wrapper {
+    @include Display($items:start,$justify:space-between,$gap:0px);
+}
+.footer__left-part {
+    max-width: 383px;
+    @include Display($items:start,$justify:start,$gap:0px);
+    flex-direction: column;
+}
+.footer__left-title {
+    margin-top: 57px;
+    @include  TextStyle($size:20px,$weight:900,$height:100%,$letter:0,$color:$clr-white,$bottom:33px);
+}
+.footer__form {
+    @include Display($items:start,$justify:start,$gap:0);
+    flex-direction: column;
+}
+.footer__input {
+    border-bottom: 1px solid $clr-medium-gray;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.footer__unput-text {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding-bottom: 10px;
+}
+.footer__input-text::placeholder{
+    background-color: transparent;
+    @include  TextStyle($size:14px,$weight:400,$height:100%,$letter:0,$color:$clr-light-gray,$bottom:0);
+}
+.footer__unput-email {
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    padding-bottom: 10px;
+}
+.footer__input-email::placeholder{
+    background-color: transparent;
+    @include  TextStyle($size:14px,$weight:400,$height:100%,$letter:0,$color:$clr-light-gray,$bottom:0);
+}
+fieldset{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid $clr-medium-gray;
+}
+
+.footer__legend {
+    @include TextStyle($size:12px,$weight:400,$height:100%,$letter:0,$color:$clr-medium-gray,$bottom:0);
+    padding: 0 5px ;
+}
+.fieldset-text {
+    display: block;
+    width: 100%;
+    min-height: 124px;
+    resize: vertical;
+    padding: 6px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    
+}
+.footer__checkbox-label{
+    @include TextStyle($size:12px,$weight:400,$height:100%,$letter:0,$color:$clr-medium-gray,$bottom:0);
+}
+.footer__checkbox {
+    width: 13px;
+    height: 13px;
+    border: 1px solid $clr-medium-gray;
+    color: transparent;
+}
+.footer__right-part {
+}
+.footer__list {
+}
+.footer__item {
+}
+.footer__link {
+}
+.footer__right-content {
+}
+.footer__right-title {
+}
+.footer__right-text-wrapper {
+}
+.footer__right-text {
+}
+.footer__right-bottom-text {
+}
+.footer__social {
+}
+.footer__social-item {
+}
+.footer__btn {
+}
+
+.footer__line {
+}
+.footer__bottom-wrapper {
+}
+.footer__bottom-text {
+}
